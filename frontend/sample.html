@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Signup</title>
+    <!-- Include AWS SDK for JavaScript -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+</head>
+<body>
+    <div id="signup">
+        <h2>Signup</h2>
+        <input type="text" id="signupEmail" placeholder="Email" />
+        <input type="password" id="signupPassword" placeholder="Password" />
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <div id="login">
+        <h2>Login</h2>
+        <input type="text" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

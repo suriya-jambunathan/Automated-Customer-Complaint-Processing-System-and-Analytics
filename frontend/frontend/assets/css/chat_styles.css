@@ -1,0 +1,119 @@
+/* this is random */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDED;
+}
+
+.container {
+    display: flex;
+    width: 1440px;
+    height: 1024px;
+}
+
+.feedback-portal {
+
+    
+    background-color: #8a0404;
+    border-radius: 20px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+
+
+    width: 50%; 
+    
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-section {
+    
+
+    flex: 2;
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    flex-grow: 2; 
+     
+    
+}
+
+.chat-log {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-top: 2px solid #e4e4e4;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4107b6; 
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #40a8cc; 
+}
+
+.chat-bubble {
+    max-width: 80%;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.user {
+    background-color: #9fa8df; 
+    align-self: flex-end;
+    display: block;
+    margin-left: auto;
+    color: white;
+}
+
+.bot {
+    background-color: #87b48e;
+    color: white;
+} 
+
+
+/* styles.css */
+

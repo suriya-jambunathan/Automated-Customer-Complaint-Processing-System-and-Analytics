@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/dev_index.css">
+        <link rel="stylesheet" href="css/message.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="noCognitoMessage" class="configMessage" style="display: none;">
+            <div class="backdrop"></div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">No Cognito User Pool Configured</h3>
+                </div>
+                <div class="panel-body">
+                    <p>There is no user pool configured in <a href="/js/config.js">/js/config.js</a>. You'll configure this in Module 2 of the workshop.</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div class="container">
+            <div class="feedback-portal">
+                <div style="width: 409px; height: 173px; left: 53px; top: 131px; position: absolute; color: white; font-size: 50px; font-family: Roboto Slab; font-weight: 600; word-wrap: break-word">
+                    Customer Feedback Portal
+                </div> 
+            </div>
+            <div class="account-section">
+                <div class="header">
+                    <h1>Developer Log In</h1>
+                </div>
+                <div class="create-account">
+                    <form id="devloginForm" action="http://54.144.11.150:3000/" method="GET">
+
+                        <input type="email" id = "emailInputSignin" name="email" placeholder="Email Address" required>
+                        <input type="password" id = "passwordInputSignin" name="password" placeholder="Password" required>
+                        <button  type="submit">Log in</button>
+                    </form>
+                    <p><a href="signin.html">user login </a></p>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-3.1.0.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+        <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+        <script src="js/config-auth-dev.js"></script>
+        <script src="js/cognito-auth-dev.js"></script>
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+    </body>
+</html>
